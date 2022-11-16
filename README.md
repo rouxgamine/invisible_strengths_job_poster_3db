@@ -11,6 +11,7 @@ This application is a resource for job posters to post jobs and be more inclusiv
 1. Installation and Usage
 2. Credits
 
+
 ## Installation and Usage
 
 ## Credits
