@@ -1,3 +1,5 @@
+console.log('hello')
+
 const apiControllerCompany = {
     index (req, res, next) {
       res.json(res.locals.data.company)
