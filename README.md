@@ -10,8 +10,6 @@ This application is a resource for job posters to post jobs and be more inclusiv
 ## Table of Contents 
 1. Installation and Usage
 2. 
-3.
-4.
 
 ## Installation and Usage
 
