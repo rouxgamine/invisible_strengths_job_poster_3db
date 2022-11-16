@@ -11,5 +11,24 @@
     "mongoose": "^6.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "invisible_strengths_job_poster_3db",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayerlinD/invisible_strengths_job_poster_3db.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MayerlinD/invisible_strengths_job_poster_3db/issues"
+  },
+  "homepage": "https://github.com/MayerlinD/invisible_strengths_job_poster_3db#readme",
+  "description": ""
 }
