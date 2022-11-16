@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
 
 const jobPostSchema = new mongoose.Schema({
-    company:{type:ObjectId , ref:'Company' },
-    jobPoster:{type:ObjectId,ref:'JobPost'},
-    positionTitle:{type: String, require: true},
-    salaryRange:{type: String, require: true},
-    linkedIn:{type: String, require: true},
-    qualification:{type: String, require: true},
+    company:{type:ObjectId, ref:'Company' },
+    jobPoster:{type:ObjectId,ref:'JobPoster'},
+    positionTitle:{type: String, required: true},
+    salaryRange:{type: String, required: true},
+    linkedIn:{type: String, required: true},
+    qualification:{type: String, required: true},
     accomodations:{type: String, 
         enum:[
             'Auditory Aids',
@@ -21,13 +21,13 @@ const jobPostSchema = new mongoose.Schema({
         ],
         require: true
     },
-    deadline:{type:Date, require: true},
-    dateposted:{type:Date, require:true},
-    applicationLink:{type:String, require:true},
-    location:{type:String, require: true},
-    jobType:{type:String, require: true},
-    experienceLevel:{type:String, require:true},
-    benefits:{type:String, require:true},
+    deadline:{type:Date, required: true},
+    datePosted:{type:Date, required:true},
+    applicationLink:{type:String, required:true},
+    location:{type:String, required: true},
+    jobType:{type:String, required: true},
+    experienceLevel:{type:String, required:true},
+    benefits:{type:String, required:true},
     onsiteOrRemote:{type:String,enum:['onsite','remote']} 
 
 })
