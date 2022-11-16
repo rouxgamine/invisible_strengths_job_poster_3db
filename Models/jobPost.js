@@ -8,7 +8,7 @@ const jobPostSchema = new mongoose.Schema({
     linkedIn:{type: String, require: true},
     qualification:{type: String, require: true},
     accomodations:{type: String, 
-        ernum:[
+        enum:[
             'Auditory Aids',
             'Speech Aids',
             'Vision Aids', 
@@ -26,9 +26,9 @@ const jobPostSchema = new mongoose.Schema({
     applicationLink:{type:String, require:true},
     location:{type:String, require: true},
     jobType:{type:String, require: true},
-    expirienceLevel:{type:String, require:true},
+    experienceLevel:{type:String, require:true},
     benefits:{type:String, require:true},
-    onsiteOrRemote:{type:String,enume:['onsite','remote']} 
+    onsiteOrRemote:{type:String,enum:['onsite','remote']} 
 
 })
 
