@@ -9,7 +9,7 @@ This application is a resource for job posters to post jobs and be more inclusiv
 ![GitHub Repo stars](https://img.shields.io/github/stars/Antonomy/invisible_strengths_job_poster_3db?style=social)
 ## Table of Contents 
 1. Installation and Usage
-2. 
+2. Credits
 
 ## Installation and Usage
 
