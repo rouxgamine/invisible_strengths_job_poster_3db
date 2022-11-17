@@ -4,7 +4,7 @@ const router = express.Router()
 const jobPostDataController = require('./jobPostDataController')
 const jobPosterDataController = require('./jobPosterDataController')
 const companyDataController = require('./companyDataController')
-const apiController = requre('./apiController')
+const apiController = require('./apiController')
  
 //Job Post Routes
 router.get('/api/post', jobPostDataController.index, apiController.index)
