@@ -1,4 +1,4 @@
-const Company = require('../models/jobposter')
+const Company = require('../models/company')
 
 const companyDataController = {
   // Index,
