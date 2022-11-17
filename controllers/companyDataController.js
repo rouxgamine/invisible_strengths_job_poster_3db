@@ -1,4 +1,4 @@
-const Company = require('../models/jobposter')
+const Company = require('../models/company')
 
 const companyDataController = {
   // Index,
@@ -43,6 +43,7 @@ const companyDataController = {
   // Create
   create(req, res, next) {
     Company.create(req.body, (err, createdCompany) => {
+      // console.log('hello', req.body)
       if (err) {
         res.status(400).send({
           msg: err.message
