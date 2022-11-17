@@ -8,12 +8,6 @@ This application is a resource for job posters to post jobs and be more inclusiv
 ![GitHub forks](https://img.shields.io/github/forks/Antonomy/invisible_strengths_job_poster_3db?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Antonomy/invisible_strengths_job_poster_3db?style=social)
 ## Table of Contents 
-1. Getting Started
-2. Planning
-3. Credits
-
-## Getting Started  
-For development you will need all of the following installed in your environment:
 
 - Node.js
 - bcrypt
