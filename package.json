@@ -14,7 +14,8 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon"
   },
   "name": "invisible_strengths_job_poster_3db",
   "version": "1.0.0",
