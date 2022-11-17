@@ -17,8 +17,6 @@ const apiCompany = {
       res.json(res.locals.data.company)
     }
   }
-  
-  module.exports = apiCompany
 
   //Job Poster api
   
@@ -39,8 +37,6 @@ const apiCompany = {
       res.json(res.locals.data.jobPoster)
     }
   }
-  
-  module.exports = apiJobPoster
 
   //Job Post api 
 
@@ -62,4 +58,8 @@ const apiCompany = {
     }
   }
   
-  module.exports = apiJobPost
+  module.exports = [
+    apiJobPost,
+    apiJobPoster,
+    apiCompany
+  ]
