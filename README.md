@@ -28,14 +28,14 @@ For development you will need all of the following installed in your environment
 - react
 - react-dom
 
+## Planning
+[Trello](https://trello.com/invite/b/XRDUaxa3/ATTI42522582412b2d2ca12d1cc117ca3edcAEABA4CE/invisible-strengths-3db)
+
 ### Node Resources
 - [Node.js Installation](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
 
-## Planning
-[Trello](https://trello.com/invite/b/XRDUaxa3/ATTI42522582412b2d2ca12d1cc117ca3edcAEABA4CE/invisible-strengths-3db)
-
-## contributor
+## contributors
 - Antony Yu  
 - Devon Aimes  
 - Kyra Church  
@@ -44,6 +44,4 @@ For development you will need all of the following installed in your environment
 - Svetlana Moes  
 - Zali Cross
 - General Assembly's Intructional Team
-
-
 
