@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
 const jobPostSchema = new mongoose.Schema({
-    company:{type:ObjectId, ref:'Company' },
-    jobPoster:{type:ObjectId,ref:'JobPoster'},
+    company:{type: mongoose.Schema.Types.ObjectId, ref:'Company' },
+    jobPoster:{type: mongoose.Schema.Types.ObjectId, ref:'JobPoster'},
     positionTitle:{type: String, required: true},
     salaryRange:{type: String, required: true},
     linkedIn:{type: String, required: true},
@@ -19,7 +19,7 @@ const jobPostSchema = new mongoose.Schema({
             'Behavioral Aids',
             'Other'
         ],
-        require: true
+        required: true
     },
     deadline:{type:Date, required: true},
     datePosted:{type:Date, required:true},

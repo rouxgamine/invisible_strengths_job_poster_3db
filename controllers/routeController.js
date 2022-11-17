@@ -1,33 +1,31 @@
-//Let me say hello!
-
 const express = require('express')
 const router = express.Router()
  
 const jobPostDataController = require('./jobPostDataController')
 const jobPosterDataController = require('./jobPosterDataController')
 const companyDataController = require('./companyDataController')
-const apiController = requre('./apiController')
+const apiController = require('./apiController')
  
 //Job Post Routes
-router.get('/post', jobPostDataController.index, apiController.index)
-router.delete('/post/:id', jobPostDataController.destroy, apiController.show)
-router.put('/post/:id', jobPostDataController.update, apiController.show)
-router.post('/post', jobPostDataController.create, apiController.show)
-router.get('/post/:id', jobPostDataController.show, apiController.show)
+router.get('/api/post', jobPostDataController.index, apiController.index)
+router.delete('/api/post/:id', jobPostDataController.destroy, apiController.show)
+router.put('/api/post/:id', jobPostDataController.update, apiController.show)
+router.post('/api/post', jobPostDataController.create, apiController.show)
+router.get('/api/post/:id', jobPostDataController.show, apiController.show)
  
 //Job Poster Routes
-router.get('/poster', jobPosterDataController.index, apiController.index)
-router.delete('/poster/:id', jobPosterDataController.destroy, apiController.show)
-router.put('/poster/:id', jobPosterDataController.update, apiController.show)
-router.post('/poster', jobPosterDataController.create, apiController.show)
-router.get('/poster/:id', jobPosterDataController.show, apiController.show)
+router.get('/api/poster', jobPosterDataController.index, apiController.index)
+router.delete('/api/poster/:id', jobPosterDataController.destroy, apiController.show)
+router.put('/api/poster/:id', jobPosterDataController.update, apiController.show)
+router.post('/api/poster', jobPosterDataController.create, apiController.show)
+router.get('/api/poster/:id', jobPosterDataController.show, apiController.show)
  
 //Company route
-router.get('/company', companyDataController.index, apiController.index)
-router.delete('/company/:id', companyDataController.destroy, apiController.show)
-router.put('/company/:id', companyDataController.update, apiController.show)
-router.post('/company', companyDataController.create, apiController.show)
-router.get('/company/:id', companyDataController.show, apiController.show)
+router.get('/api/company', companyDataController.index, apiController.index)
+router.delete('/api/company/:id', companyDataController.destroy, apiController.show)
+router.put('/api/company/:id', companyDataController.update, apiController.show)
+router.post('/api/company', companyDataController.create, apiController.show)
+router.get('/api/company/:id', companyDataController.show, apiController.show)
  
  
 module.exports = router

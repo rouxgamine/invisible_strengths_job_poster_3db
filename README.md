@@ -8,11 +8,29 @@ This application is a resource for job posters to post jobs and be more inclusiv
 ![GitHub forks](https://img.shields.io/github/forks/Antonomy/invisible_strengths_job_poster_3db?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Antonomy/invisible_strengths_job_poster_3db?style=social)
 ## Table of Contents 
-1. Installation and Usage
-2. Credits
 
+- Node.js
+- bcrypt
+- connect-mongo,
+- cors
+- dotenv
+- express
+- express-session
+- jsx-view-engine
+- method-override
+- mongoose
+- react
+- react-dom
 
 ## Credits
 
-##
+## contributors
+- Antony Yu  
+- Devon Aimes  
+- Kyra Church  
+- Mayerlin Duluc  
+- Rosa Pena   
+- Svetlana Moes  
+- Zali Cross
+- General Assembly's Intructional Team
 
