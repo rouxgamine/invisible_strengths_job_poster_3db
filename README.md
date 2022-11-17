@@ -8,40 +8,11 @@ This application is a resource for job posters to post jobs and be more inclusiv
 ![GitHub forks](https://img.shields.io/github/forks/Antonomy/invisible_strengths_job_poster_3db?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Antonomy/invisible_strengths_job_poster_3db?style=social)
 ## Table of Contents 
-1. Getting Started
-2. Planning
-3. Credits
+1. Installation and Usage
+2. Credits
 
-## Getting Started  
-For development you will need all of the following installed in your environment:
 
-- Node.js
-- bcrypt
-- connect-mongo,
-- cors
-- dotenv
-- express
-- express-session
-- jsx-view-engine
-- method-override
-- mongoose
-- react
-- react-dom
+## Credits
 
-## Planning
-[Trello](https://trello.com/invite/b/XRDUaxa3/ATTI42522582412b2d2ca12d1cc117ca3edcAEABA4CE/invisible-strengths-3db)
-
-### Node Resources
-- [Node.js Installation](https://nodejs.org/en/)
-- [NPM](https://www.npmjs.com/)
-
-## contributor
-- Antony Yu  
-- Devon Aimes  
-- Kyra Church  
-- Mayerlin Duluc  
-- Rosa Pena   
-- Svetlana Moes  
-- Zali Cross
-- General Assembly's Intructional Team
+##
 
