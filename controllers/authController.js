@@ -1,12 +1,13 @@
 const express = require('express')
 const User = require('../models/user')
 const bcrypt = require('bcryptjs')
+const RESOURCE_PATH ='/user'
 
 const router = express.Router()
 
 // The SignUp Routes 
 router.get('/signup', (req, res) => {
-    res.send('hello')
+    res.redirect(`${RESOURCE_PATH}`)
 })
 
 router.post('/signup', async (req, res) => {
@@ -30,7 +31,7 @@ router.post('/signup', async (req, res) => {
 
 // The login Routes 
 router.get('/login', (req, res) => {
-    res.render('user/Login.jsx')
+    res.redirect(`${RESOURCE_PATH}`)
 })
 
 router.post('/login', async (req, res) => {
@@ -48,7 +49,7 @@ router.post('/login', async (req, res) => {
                     req.session.username = username
                     req.session.loggedIn = true
                     // redirect to fruits page if successful
-                    res.json({error:'successful'})
+                    res.json({output:"successfully logged in"})
                 } else {
                     // error if password doesn't match
                     res.json({ error: "password doesn't match" })

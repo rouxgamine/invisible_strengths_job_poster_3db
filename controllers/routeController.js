@@ -6,6 +6,14 @@ const jobPosterDataController = require('./jobPosterDataController')
 const companyDataController = require('./companyDataController')
 const apiController = require('./apiController')
 
+router.use((req, res, next) => {
+    if (req.session.loggedIn) {
+        next()
+    } else {
+        res.redirect("/user/login")
+    }
+})
+
 //Job Post Routes
 router.get('/api/post', jobPostDataController.index, apiController.apiJobPost.index)
 router.delete('/api/post/:id', jobPostDataController.destroy, apiController.apiJobPost.show)
