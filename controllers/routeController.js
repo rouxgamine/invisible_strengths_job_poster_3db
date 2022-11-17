@@ -5,7 +5,7 @@ const jobPostDataController = require('./jobPostDataController')
 const jobPosterDataController = require('./jobPosterDataController')
 const companyDataController = require('./companyDataController')
 const apiController = require('./apiController')
- 
+
 //Job Post Routes
 router.get('/api/post', jobPostDataController.index, apiController.apiJobPost.index)
 router.delete('/api/post/:id', jobPostDataController.destroy, apiController.apiJobPost.show)
