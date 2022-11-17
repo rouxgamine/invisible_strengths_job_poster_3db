@@ -58,8 +58,8 @@ const apiCompany = {
     }
   }
   
-  module.exports = [
+  module.exports = {
     apiJobPost,
     apiJobPoster,
     apiCompany
-  ]
+  }
