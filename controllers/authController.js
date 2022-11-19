@@ -16,17 +16,16 @@ router.post('/signup', async (req, res) => {
         req.body.password,
         await bcrypt.genSalt(10)
     )
+    req.body.username = req.body.username.toLowerCase() 
     // create the New user
     User.create(req.body)
         .then((user) => {
             // redirect to login page
-            res.json({output:'signup successful'}),
-            res.render('user/SignUp.jsx')
+            res.json({output:'signup successful'})
         })
         .catch((error) => {
             // send error as json
-            console.log(error)
-            res.json({ error })
+            res.json({ output: 'user already exist'})
         })
 })
 
