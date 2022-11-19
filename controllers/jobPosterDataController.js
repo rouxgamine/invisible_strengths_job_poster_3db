@@ -3,7 +3,7 @@ const JobPoster = require('../models/jobposter')
 const jobPosterDataController = {
   // Index,
   index(req, res, next) {
-    JobPoster.find({}, (err, foundJobPosters) => {
+    JobPoster.find({username: req.session.username}, (err, foundJobPosters) => {
       if (err) {
         res.status(400).send({
           msg: err.message
@@ -42,6 +42,7 @@ const jobPosterDataController = {
   },
   // Create
   create(req, res, next) {
+    req.body.username = req.session.username
     JobPoster.create(req.body, (err, createdJobPoster) => {
       if (err) {
         res.status(400).send({
