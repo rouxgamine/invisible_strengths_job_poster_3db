@@ -16,6 +16,7 @@ router.post('/signup', async (req, res) => {
         req.body.password,
         await bcrypt.genSalt(10)
     )
+    req.body.username = req.body.username.toLowerCase() 
     // create the New user
     User.create(req.body)
         .then((user) => {
