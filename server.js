@@ -10,6 +10,7 @@ const app = express()
 
 
 /* Start Config */
+app.use(express.json())
 app.use(express.urlencoded({ extended: true}))
 app.use((req, res, next) => {
     res.locals.data = {}

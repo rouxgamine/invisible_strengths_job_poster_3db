@@ -2,64 +2,37 @@
 
 const apiCompany = {
     index (req, res, next) {
-      res.json(res.locals.data.company)
+      res.json(res.locals.data.companies)
     },
     show (req, res, next) {
       res.json(res.locals.data.company)
-    },
-    create (req, res, next) {
-      res.json(res.locals.data.company)
-    },
-    update (req, res, next) {
-      res.json(res.locals.data.company)
-    },
-    destroy (req, res, next) {
-      res.json(res.locals.data.company)
     }
   }
-  
-  module.exports = apiCompany
 
   //Job Poster api
   
   const apiJobPoster = {
     index (req, res, next) {
-      res.json(res.locals.data.jobPoster)
+      res.json(res.locals.data.jobPosters)
     },
     show (req, res, next) {
       res.json(res.locals.data.jobPoster)
-    },
-    create (req, res, next) {
-      res.json(res.locals.data.jobPoster)
-    },
-    update (req, res, next) {
-      res.json(res.locals.data.jobPoster)
-    },
-    destroy (req, res, next) {
-      res.json(res.locals.data.jobPoster)
     }
   }
-  
-  module.exports = apiJobPoster
 
   //Job Post api 
 
   const apiJobPost = {
     index (req, res, next) {
-      res.json(res.locals.data.jobPost)
+      res.json(res.locals.data.jobPosts)
     },
     show (req, res, next) {
-      res.json(res.locals.data.jobPost)
-    },
-    create (req, res, next) {
-      res.json(res.locals.data.jobPost)
-    },
-    update (req, res, next) {
-      res.json(res.locals.data.jobPost)
-    },
-    destroy (req, res, next) {
       res.json(res.locals.data.jobPost)
     }
   }
   
-  module.exports = apiJobPost
+  module.exports = {
+    apiJobPost,
+    apiJobPoster,
+    apiCompany
+  }

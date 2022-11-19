@@ -1,12 +1,13 @@
 const express = require('express')
 const User = require('../models/user')
 const bcrypt = require('bcryptjs')
+const RESOURCE_PATH ='/user'
 
 const router = express.Router()
 
 // The SignUp Routes 
 router.get('/signup', (req, res) => {
-    res.send('hello')
+    res.render('user/SignUp.jsx')
 })
 
 router.post('/signup', async (req, res) => {
@@ -19,7 +20,8 @@ router.post('/signup', async (req, res) => {
     User.create(req.body)
         .then((user) => {
             // redirect to login page
-            res.json(error)
+            res.json({output:'signup successful'}),
+            res.render('user/SignUp.jsx')
         })
         .catch((error) => {
             // send error as json
@@ -37,18 +39,18 @@ router.post('/login', async (req, res) => {
     // get the data from the request body
     const { username, password } = req.body
     // search for the user
-    User.findOne({ username })
+    User.findOne({ username }) //shortcut?? ask for explanation 
         .then(async (user) => {
             // check if user exists
             if (user) {
                 // compare password
-                const result = await bcrypt.compare(password, user.password)
+                const result = await bcrypt.compare(password, user.password) 
                 if (result) {
                     // store some properties in the session object
                     req.session.username = username
                     req.session.loggedIn = true
                     // redirect to fruits page if successful
-                    res.json({error:'successful'})
+                    res.json({output:"successfully logged in"})
                 } else {
                     // error if password doesn't match
                     res.json({ error: "password doesn't match" })
@@ -74,7 +76,7 @@ router.get('/logout', (req, res) => {
             console.error(err)
             res.status(500).json(err)
         } else {
-            res.redirect('/')
+            res.json({output: 'successfully logout'})
         }
     })
 })
